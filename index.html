@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="stylequiz.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Quiz Platform</h1>
+
+    <!-- LOGIN -->
+    <div id="loginPage">
+        <input type="text" id="name" placeholder="Enter your name"><br><br>
+        <input type="email" id="email" placeholder="Enter your email"><br><br>
+        <button onclick="startQuiz()">Login</button>
+    </div>
+
+    <!-- QUIZ -->
+    <div id="quizPage" style="display:none;">
+        <p id="timer">Time Left: 60s</p>
+
+        <div id="quiz"></div>
+
+        <div class="buttons">
+            <button id="backBtn" onclick="prevQuestion()">⬅ Back</button>
+            <button id="nextBtn" onclick="nextQuestion()">Next ➡</button>
+            <button id="submitBtn" onclick="submitQuiz()" style="display:none;">Submit</button>
+        </div>
+    </div>
+
+    <!-- RESULT -->
+    <div id="resultPage" style="display:none;">
+        <h2>Score</h2>
+        <p id="nameResult"></p>
+        <p id="scoreResult"></p>
+
+        <canvas id="confetti"></canvas>
+
+        <!-- 📝 FEEDBACK -->
+        <div class="feedback">
+            <h3>Give Your Feedback</h3>
+            <textarea id="feedbackText" placeholder="Enter your feedback here..."></textarea><br>
+            <button onclick="submitFeedback()">Submit Feedback</button>
+            <p id="feedbackMsg"></p>
+        </div>
+    </div>
+
+</div>
+
+<script src="scriptquiz.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+    body {
+    font-family: Arial;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    text-align: center;
+}
+
+.container {
+    background: white;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px gray;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button {
+    background: #ff7e5f;
+    color: white;
+}
+
+#submitBtn {
+    background: green;
+    color: white;
+}
+
+#timer {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+/* Confetti canvas */
+#confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+/* Feedback */
+.feedback {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 80%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+}
